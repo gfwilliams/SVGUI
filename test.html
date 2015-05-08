@@ -1,0 +1,17 @@
+<html>
+<body>
+ <script src="components.js"></script>
+ <script>
+var xhr = new XMLHttpRequest;
+xhr.open('get','components.svg',true);
+xhr.onreadystatechange = function(){
+  if (xhr.readyState != 4) return;
+  var svg = xhr.responseXML.documentElement;
+  svg = document.importNode(svg, true); // surprisingly optional in these browsers
+  document.body.appendChild(svg);
+  applyToSVG();
+};
+xhr.send();
+</script>
+</body>
+</html>
