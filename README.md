@@ -3,6 +3,8 @@ Simple SVG UI Library
 
 Quick and dirty SVG UI library - currently far from finished.
 
+[See here](http://gfwilliams.github.io/SVGUI/test.html) for an example.
+
 Design your UI as an SVG using Inkscape, and apply classes to each node. When it's loaded with the JS it'll spring into life so that items can be clicked and dragged.
 
 Making SVGs
